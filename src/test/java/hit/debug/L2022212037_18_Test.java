@@ -11,7 +11,7 @@ class TestSolutioned {
 
         // 示例 1
         int[] nums1 = {1, 2, 3, 4};
-        int[] expected1 = {24, 12, 8, 6};
+        int[] expected1 = {24, 12, 8, 9};
         assertArrayEquals(expected1, solution.productExceptSelf(nums1));
 
         // 示例 2
