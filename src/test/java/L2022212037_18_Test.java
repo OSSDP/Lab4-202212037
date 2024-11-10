@@ -25,8 +25,8 @@ public class L2022212037_18_Test {
         List<String> result_A2=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         boolean result_a=CollectionUtils.isEmpty(result_A);
         boolean result_a2=CollectionUtils.isEmpty(result_A2);
-        assertFalse(result_a);
-        assertFalse(result_a2);
+        assertTrue(result_a);
+        assertTrue(result_a2);
     }
 
     //测试当输入字符串长度大于10且其中有出现不止一次的长度为10的子字符串时，返回的结果是否正确
@@ -37,10 +37,10 @@ public class L2022212037_18_Test {
     public void test2(){
         List<String> result_B=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         List<String> test_B=new ArrayList<>();
-        test_B.add("AACCCG");
+        test_B.add("AACCCGTT");
         test_B.add("AAACCCTT");
         boolean result_b=test_B.equals(result_B);
-        assertFalse(result_b);
+        assertTrue(result_b);
         //System.out.println(result_B);
     }
 
@@ -51,6 +51,6 @@ public class L2022212037_18_Test {
     public void test3(){
         List<String> result_C=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         boolean result_c=CollectionUtils.isEmpty(result_C);
-        assertFalse(result_c);
+        assertTrue(result_c);
     }
 }
