@@ -1,9 +1,9 @@
 package hit.debug;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
-class TestSolutioned {
+public class SolutionTest {
 
     @Test
     void testProductExceptSelf() {
@@ -11,7 +11,7 @@ class TestSolutioned {
 
         // 示例 1
         int[] nums1 = {1, 2, 3, 4};
-        int[] expected1 = {24, 12, 8, 9};
+        int[] expected1 = {24, 12, 8, 6};
         assertArrayEquals(expected1, solution.productExceptSelf(nums1));
 
         // 示例 2
@@ -21,7 +21,7 @@ class TestSolutioned {
 
         // 测试边界情况：只有一个元素
         int[] nums3 = {5};
-        int[] expected3 = {2}; // 只有一个元素，除自身外没有元素，返回 1
+        int[] expected3 = {1}; // 只有一个元素，除自身外没有元素，返回 1
         assertArrayEquals(expected3, solution.productExceptSelf(nums3));
 
         // 测试边界情况：包含零
