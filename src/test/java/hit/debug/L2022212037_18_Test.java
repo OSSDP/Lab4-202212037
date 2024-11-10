@@ -3,7 +3,7 @@ package hit.debug;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import org.junit.jupiter.api.Test;
 
-public class SolutionTest {
+class SolutionTest {
 
     @Test
     void testProductExceptSelf() {
