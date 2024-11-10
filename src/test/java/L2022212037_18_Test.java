@@ -37,7 +37,7 @@ public class L2022212037_18_Test {
     public void test2(){
         List<String> result_B=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         List<String> test_B=new ArrayList<>();
-        test_B.add("AACCCGTT");
+        test_B.add("AACCCG");
         test_B.add("AAACCCTT");
         boolean result_b=test_B.equals(result_B);
         assertFalse(result_b);
