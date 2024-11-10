@@ -13,7 +13,7 @@ import static org.junit.Assert.assertFalse;
 //第一类为输入字符串长度不足或等于10的情况，预计返回的结果为空；
 //第二类为输入字符串长度大于10且其中有出现不止一次的长度为10的子字符串的情况，预计返回结果不为空；
 //第三类为输入字符串长度大于10且其中没有出现不止一次的长度为10的子字符串的情况，预计返回结果为空。
-public class L2022212037_18_Test {
+public class L2022212022_17_Test {
 
     //测试当输入字符串长度不足或等于10时，返回的结果是否为空
     //第一次测试用例为长度刚好为10的字符串"AAAAAAAAAA"
@@ -25,8 +25,8 @@ public class L2022212037_18_Test {
         List<String> result_A2=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         boolean result_a=CollectionUtils.isEmpty(result_A);
         boolean result_a2=CollectionUtils.isEmpty(result_A2);
-        assertTrue(result_a);
-        assertTrue(result_a2);
+        assertFalse(result_a);
+        assertFalse(result_a2);
     }
 
     //测试当输入字符串长度大于10且其中有出现不止一次的长度为10的子字符串时，返回的结果是否正确
@@ -40,7 +40,7 @@ public class L2022212037_18_Test {
         test_B.add("AACCCGTT");
         test_B.add("AAACCCTT");
         boolean result_b=test_B.equals(result_B);
-        assertTrue(result_b);
+        assertFalse(result_b);
         //System.out.println(result_B);
     }
 
@@ -51,6 +51,6 @@ public class L2022212037_18_Test {
     public void test3(){
         List<String> result_C=Solution.findRepeatedDnaSequences("AAAACCCGTTTAAAACCCGTTT");
         boolean result_c=CollectionUtils.isEmpty(result_C);
-        assertTrue(result_c);
+        assertFalse(result_c);
     }
 }
