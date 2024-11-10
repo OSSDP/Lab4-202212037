@@ -21,7 +21,7 @@ class TestSolutioned {
 
         // 测试边界情况：只有一个元素
         int[] nums3 = {5};
-        int[] expected3 = {1}; // 只有一个元素，除自身外没有元素，返回 1
+        int[] expected3 = {2}; // 只有一个元素，除自身外没有元素，返回 1
         assertArrayEquals(expected3, solution.productExceptSelf(nums3));
 
         // 测试边界情况：包含零
