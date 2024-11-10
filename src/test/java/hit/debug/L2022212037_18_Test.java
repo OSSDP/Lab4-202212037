@@ -1,9 +1,9 @@
 package hit.debug;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class TestSolutioned {
 
     @Test
     void testProductExceptSelf() {
